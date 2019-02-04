@@ -8,32 +8,36 @@ inputstring += value;
 document.calculator.input.value=inputstring;
 }
 </script>
+<style>
+#calculator{width:200px;height:100px;}
+#button{width:20%;height:25px;font-size:15px;}
+</style>
 </head>
 <body>
 <form name="calculator">
 <table id=calculator border=5 bordercolor=pink bgcolor="blue">
 <tr >
 <td>
-<input type="text" name="input"><br />
-<input type="button" value=" clear " onclick="input.value=' ';inputstring=' ' ">
-<input type="button" value=" mod "   onclick="updatestring('%')">
-<input type="button" value=" * "     onclick="updatestring('*')"><br />
-<input type="button" value=" 7 "     onclick="updatestring('7')">
-<input type="button" value=" 8 "     onclick="updatestring('8')">
-<input type="button" value=" 9 "     onclick="updatestring('9')">
-<input type="button" value=" / "     onclick="updatestring('/')"><br />
-<input type="button" value=" 4 "     onclick="updatestring('4')">
-<input type="button" value=" 5 "     onclick="updatestring('5')">
-<input type="button" value=" 6 "     onclick="updatestring('6')">
-<input type="button" value=" - "     onclick="updatestring('-')"><br />
-<input type="button" value=" 1 "     onclick="updatestring('1')">
-<input type="button" value=" 2 "     onclick="updatestring('2')">
-<input type="button" value=" 3 "     onclick="updatestring('3')">
-<input type="button" value=" + "     onclick="updatestring('+')"><br />
-<input type="button" value=" 0 "     onclick="updatestring('0')">
-<input type="button" value=" 00 "    onclick="updatestring('00')">
-<input type="button" value=" . "     onclick="updatestring('.')">
-<input type="button" value=" = "     onclick="input.value=eval(inputstring);">
+<input id="calculator" type="text" name="input"><br />
+<input id="button" type="button" value=" clear " onclick="input.value=' ';inputstring=' ' ">
+<input id="button" type="button" value=" mod "   onclick="updatestring('%')">
+<input id="button" type="button" value=" * "     onclick="updatestring('*')"><br />
+<input id="button" type="button" value=" 7 "     onclick="updatestring('7')">
+<input id="button" type="button" value=" 8 "     onclick="updatestring('8')">
+<input id="button" type="button" value=" 9 "     onclick="updatestring('9')">
+<input id="button" type="button" value=" / "     onclick="updatestring('/')"><br />
+<input id="button" type="button" value=" 4 "     onclick="updatestring('4')">
+<input id="button"  type="button" value=" 5 "     onclick="updatestring('5')">
+<input id="button"  type="button" value=" 6 "     onclick="updatestring('6')">
+<input id="button" type="button" value=" - "     onclick="updatestring('-')"><br />
+<input id="button"  type="button" value=" 1 "     onclick="updatestring('1')">
+<input id="button" type="button" value=" 2 "     onclick="updatestring('2')">
+<input id="button" type="button" value=" 3 "     onclick="updatestring('3')">
+<input id="button" type="button" value=" + "     onclick="updatestring('+')"><br />
+<input id="button" type="button" value=" 0 "     onclick="updatestring('0')">
+<input id="button" type="button" value=" 00 "    onclick="updatestring('00')">
+<input id="button" type="button" value=" . "     onclick="updatestring('.')">
+<input id="button" type="button" value=" = "     onclick="input.value=eval(inputstring);">
 </td></tr>
 </table>
 </form>
